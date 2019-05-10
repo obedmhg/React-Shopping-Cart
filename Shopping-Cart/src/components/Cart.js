@@ -32,7 +32,7 @@ class Cart extends Component{
                                     <div className="item-desc">
                                         <span className="title">{item.displayName}</span>
                                         <p>{item.longDescription}</p>
-                                        <p><b>Price: {item.listPrice}$</b></p> 
+                                        <p><b>Price: ${item.listPrice}</b></p> 
                                         <p>
                                             <b>Quantity: {item.quantity}</b> 
                                         </p>
