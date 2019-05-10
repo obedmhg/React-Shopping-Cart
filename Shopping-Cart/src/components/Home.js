@@ -13,14 +13,14 @@ import { addToCart } from './actions/cartActions'
             return(
                 <div className="card" key={item.id}>
                         <div className="card-image">
-                            <img src={item.primaryMediumImageURL} alt={item.displayName}/>
-                            <span className="card-title">{item.displayName}</span>
+                            <img src={item.img} alt={item.title}/>
+                            <span className="card-title">{item.title}</span>
                             <span to="/" className="btn-floating halfway-fab waves-effect waves-light red" onClick={()=>{this.handleClick(item.id)}}><i className="material-icons">add</i></span>
                         </div>
 
                         <div className="card-content">
-                            <p>{item.longDescription}</p>
-                            <p><b>Price: $ {item.listPrice} </b></p>
+                            <p>{item.desc}</p>
+                            <p><b>Price: {item.price}$</b></p>
                         </div>
                  </div>
 

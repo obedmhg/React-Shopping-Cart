@@ -26,13 +26,13 @@ class Cart extends Component{
                        
                         <li className="collection-item avatar" key={item.id}>
                                     <div className="item-img"> 
-                                        <img src={item.primaryMediumImageURL} className=""/>
+                                        <img src={item.img} alt={item.img} className=""/>
                                     </div>
                                 
                                     <div className="item-desc">
-                                        <span className="title">{item.displayName}</span>
-                                        <p>{item.longDescription}</p>
-                                        <p><b>Price: {item.listPrice}$</b></p> 
+                                        <span className="title">{item.title}</span>
+                                        <p>{item.desc}</p>
+                                        <p><b>Price: {item.price}$</b></p> 
                                         <p>
                                             <b>Quantity: {item.quantity}</b> 
                                         </p>
